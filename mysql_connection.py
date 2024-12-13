@@ -1,17 +1,1 @@
-import mysql.connector
-
-try:
-    connection = mysql.connector.connect(
-        host="127.0.0.1",
-        user="root",  
-        password=""    # Empty password
-    )
-    print("Successfully connected to MySQL")
-    
-except mysql.connector.Error as err:
-    print(f"Error: {err}")
-
-finally:
-    if 'connection' in locals() and connection.is_connected():
-        connection.close()
-        print("MySQL connection closed")
+{"encoding": "base64", "content": "aW1wb3J0IG15c3FsLmNvbm5lY3RvcgoKdHJ5OgogICAgY29ubmVjdGlvbiA9IG15c3FsLmNvbm5lY3Rvci5jb25uZWN0KAogICAgICAgIGhvc3Q9IjEyNy4wLjAuMSIsCiAgICAgICAgdXNlcj0icm9vdCIsICAKICAgICAgICBwYXNzd29yZD0iIiAgICAjIEVtcHR5IHBhc3N3b3JkCiAgICApCiAgICBwcmludCgiU3VjY2Vzc2Z1bGx5IGNvbm5lY3RlZCB0byBNeVNRTCIpCiAgICAKZXhjZXB0IG15c3FsLmNvbm5lY3Rvci5FcnJvciBhcyBlcnI6CiAgICBwcmludChmIkVycm9yOiB7ZXJyfSIpCgpmaW5hbGx5OgogICAgaWYgJ2Nvbm5lY3Rpb24nIGluIGxvY2FscygpIGFuZCBjb25uZWN0aW9uLmlzX2Nvbm5lY3RlZCgpOgogICAgICAgIGNvbm5lY3Rpb24uY2xvc2UoKQogICAgICAgIHByaW50KCJNeVNRTCBjb25uZWN0aW9uIGNsb3NlZCIp"}
